@@ -1,0 +1,26 @@
+// template
+* {
+  box-sizing: border-box;
+}
+
+body {
+ 	margin: 0;
+	font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 100%
+	max-width: 1170px;
+	padding: 0 px;
+	margin: 0 auto;
+}
+
+
