@@ -1,10 +1,21 @@
+.small-title {
+  color: #333;
+  font-size: 12px;
+}
+
+.txt {
+  color: #666;
+  font-size: 14px;
+}
+
+
 // template
 * {
   box-sizing: border-box;
 }
 
 body {
- 	margin: 0;
+  margin: 0;
 	font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
 }
 
@@ -17,10 +28,240 @@ li {
 }
 
 .container {
-	width: 100%
-	max-width: 1170px;
-	padding: 0 px;
-	margin: 0 auto;
+	margin: 5vh 5vw;
+  padding: 0 px;
+  // max-width: 1000;
+  // width: 100%;
+  // margin: 5vh auto;
+}
+
+// Drawer menu
+.btn {
+	background:transparent url(btn.png) no-repeat 0 0;
+	display: block;
+	width:35px;
+	height: 35px;
+	position: absolute;
+	top:20px;
+	right:20px;
+	cursor: pointer;
+	z-index: 200;
+}
+.peke {
+	background-position: -35px 0;
+}
+.drawr {
+	display: none;
+	background-color:rgba(0,0,0,0.6);
+	position: absolute;
+	top: 0px;
+	right:0;
+	width:260px;
+	padding:60px 0 20px 20px;
+	z-index: 100;
+}
+#menu li {
+	width:260px;
+}
+#menu li a {
+	color:#fff;
+	display: block;
+	padding: 15px;
+}
+// ハンバーガーメニュー ---------------------------
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+}
+.global-nav {
+  position: fixed;
+  right: -320px; /* これで隠れる */
+  top: 0;
+  width: 300px; /* スマホに収まるくらい */
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #fff;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav__item {
+  text-align: center;
+  padding: 0 14px;
+}
+.global-nav__item a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #111;
+}
+.global-nav__item a:hover {
+  background-color: #eee;
+}
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 1px;
+  background-color: #111;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 14px;
+}
+.hamburger__line--2 {
+  top: 20px;
+}
+.hamburger__line--3 {
+  top: 26px;
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+// ヘッダータイトル
+.header-title {
+  margin-right: auto;
+  & a {
+    font-size: 30px;
+    color: #111;  
+  }
+  & div {
+    font-size: 30px;
+    color: #111;
+  }
+  
+
 }
 
 
+
+// タイトル画像
+#header-img {
+	width: 100vw;
+}
+
+// タイトル
+#header-words {
+  font-size: 23px;
+  color: #777;
+}
+
+// コンテンツ
+.art-date {
+  color: #999;
+  font-size: 14px;
+}
+
+.art-a {
+  color: #111;
+  font-size: 19px;
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-a {
+  display: block;
+  width: 77px;
+  height: 43px;
+  border: 1px solid #ddd;
+  font-size: 93%;
+  color: #777;
+  padding-top: 9px;
+  text-align: center;
+}
+.con-line {
+  border-bottom: 1px solid #ddd;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+}
+
+#pro-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#pro-right {
+  margin-left: 5vw;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa {
+  color: #666;
+}
+
+#recent-posts {
+  display: flex;
+  flex-direction: column; 
+  & span {
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+input {
+  height: 34px;
+  max-width: 320px;
+  width: 100%;
+}

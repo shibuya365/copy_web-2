@@ -5,72 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Write-書くためのテーマ</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <a href="#">Write</a>
-      <div>書くためのテーマ</div>
-      <button></button>
+    <div class="container hdr-con">
+      <div class="header-title">
+        <a href="#">Write</a>
+        <div>書くためのテーマ</div>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <nav class="global-nav">
+        <ul class="global-nav__list">
+          <li class="global-nav__item"><a href="">メニュー1</a></li>
+          <li class="global-nav__item"><a href="">メニュー2</a></li>
+          <li class="global-nav__item"><a href="">メニュー3</a></li>
+          <li class="global-nav__item"><a href="">メニュー4</a></li>
+          <li class="global-nav__item"><a href="">メニュー5</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+      </div>
+      <div class="black-bg" id="js-black-bg"></div>
+      <!-- ハンバーガーメニューはここまで -->
     </div>
   </header>
-  <div>
-    <div class="container">
-      <img src="img/cropped-nicole-honeywill-730102-unsplash.jpg" alt="">
-      <div>Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</div>
-    </div>
-    <div class="container">
-      <article>
-        <a href=""><time>2018/9/1</time></a>
-        <a href="#">書くためのテーマ</a>
-        <p>Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
-      </article>
-    </div>
-    <div class="container">
-      <a href="">次へ</a>
-    </div>
-    <div class="container">
-      <div>
-        <img src="img/profile-m.png" alt="">
-        <div>
-          <strong>John Doe</strong>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>  
-          </ul>
+
+  <img id="header-img" src="img/cropped-nicole-honeywill-730102-unsplash.jpg" alt="">
+
+  <div class="container con-line">
+    <div id="header-words">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</div>
+    <article>
+      <a href=""><time class="art-date" >2018/9/1</time></a>
+      <a href="#" class="art-a" >書くためのテーマ</a>
+      <p class="txt" >Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
+    </article>
+    <a href="#" class="btn-a">次へ>></a>
+  </div>
+  <!-- メインコンテンツの下の方 -->
+  <div class="container con-line">
+    <div id="profile">
+      <img id="pro-img" src="img/profile-m.png" alt="">
+      <div id="pro-right">
+        <strong>John Doe</strong>
+        <div class="social">
+          <li><a href=""><span class="fa fa-twitter fa-lg"></span>
+          </a></li>
+          <li><a href=""><span class="fa fa-facebook fa-lg"></span>
+          </a></li>
+          <li><a href=""><span class="fa fa-instagram fa-lg"></span>
+          </a></li>  
         </div>
-      </div>      
-    </div>
-    <div class="container">
-      <div>これはプロフィールウィジェットです。ここにはプロフィール画像・名前・自己紹介文・ソーシャルリンク（最大7つ）を設定することができます。</div>
-      <h2>フッター右</h2>
-      <p>3つのフッター右ウィジェットエリアはフッターの右側に表示され、使用する数によって幅は自動的に調整されます。1つも使用しない場合は表示されません。</p>
-    </div>
-    <div class="container">
-      <h2>最近の投稿</h2>
-      <ul>
-        <li>
-          <a href="#">書くためのテーマ</a>
-          <span>2018年9月1日</span>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
-      <h2>カテゴリー</h2>
-      <ul>
-        <li><a href="">サンプル投稿</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <input type="text">
-    </div>
+      </div>
+    </div>      
+    <div class="txt">これはプロフィールウィジェットです。ここにはプロフィール画像・名前・自己紹介文・ソーシャルリンク（最大7つ）を設定することができます。</div>
+    <h2 class="small-title">フッター右</h2>
+    <p class="txt">3つのフッター右ウィジェットエリアはフッターの右側に表示され、使用する数によって幅は自動的に調整されます。1つも使用しない場合は表示されません。</p>
+    <h2 class="small-title">最近の投稿</h2>
+    <ul>
+      <div id="recent-posts">
+        <a class="txt" href="#">書くためのテーマ</a>
+        <span>2018年9月1日</span>
+      </div>
+    </ul>
+    <h2 class="small-title">カテゴリー</h2>
+    <ul>
+      <li><a class="txt" href="#">サンプル投稿</a></li>
+      <li><a class="txt" href="#">投稿フォーマット</a></li>
+      <li><a class="txt" href="#">普通の投稿</a></li>
+    </ul>
+    <input type="text">
   </div>
   <footer>
     <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>  
+      <li><a href=""><span class="fa fa-twitter fa-lg"></span>
+      </a></li>
+      <li><a href=""><span class="fa fa-facebook fa-lg"></span>
+      </a></li>
+      <li><a href=""><span class="fa fa-instagram fa-lg"></span>
+      </a></li>  
     </ul>
     <div>Powered by 
       <a href="#">WordPress</a>
