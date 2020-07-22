@@ -1,0 +1,109 @@
+@media (min-width: 768px) {
+  .container {
+    padding: 0 px;
+    // max-width: 1000;
+    // width: 100%;
+    // margin: 5vh auto;
+  }
+  
+  .t-txt {
+    font-size: 16px;
+  }
+
+  .t-fs14 {
+    font-size: 14px;
+  }
+
+  .is-block {
+    display: block;
+    width: 48px;
+
+  }
+
+  .hdr-con {
+    div {
+      a {
+        font-size: 36px;
+        }
+      div {
+        font-size: 18px;
+      }
+    }
+  }
+  #hidden-menu {
+    display: block;
+    display: flex;
+    & li {
+      margin-right: 5vw;
+      &:last-child {
+        margin-left: auto;
+      }  
+    }
+  }
+
+  // 画像をセンターリングするには`display: block`が必要
+  #header-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  // .article {
+  //   display: flex;
+  //   & a {
+  //     margin-right: 25vw;
+  //   // font-size: 16px;
+  //   // display: block;
+  //   }
+  //   & div {
+  //     & a {
+  //       font-size: 22px;
+  //     }
+  //   }
+  // }
+
+  #next-btn {
+    display: flex;
+  }
+
+  .btn-a {
+    height: 48px;
+  }
+
+}
+
+
+@media (min-width: 980px) {
+  .t-m-l_margin {
+    margin-bottom: 70px;
+
+  }
+  .hdr-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #hidden-menu {
+    // align-self: flex-end;
+    margin-bottom: 0px;
+    margin: o auto;
+  }
+  .fa-search {
+    margin-left: 5vw;
+  }
+  .article {
+    display: flex;
+    & a {
+      display: block;
+      margin-right: 20vw;
+    }
+  }
+
+  #next-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #four-column {
+    display: flex;
+  }
+}
