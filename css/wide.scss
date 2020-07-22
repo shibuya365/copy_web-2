@@ -73,6 +73,11 @@
 
 
 @media (min-width: 980px) {
+  .l-2vh {
+    margin-bottom: 2vh;
+  }
+
+
   .t-m-l_margin {
     margin-bottom: 70px;
 
@@ -106,4 +111,36 @@
   #four-column {
     display: flex;
   }
+
+  .recent-post {
+    margin-bottom: 1vw;
+  }
+
+  // .categolys {
+  //   display: flex;
+  //   flex-direction: column;
+  //   & h-search {
+
+  //   }
+  // }
+  input {
+    display: block;
+    // margin: auto auto 0px auto;
+    margin-bottom: 0;
+    margin-top: 30vh;
+  }
+
+  footer {
+    position: relative;
+    & .social {
+      width: 10vw;
+    }
+    & .h-last-txt {
+      position: absolute;
+      margin-left: 30vw;
+      margin-bottom: 4vh;
+
+    }
+  }
+
 }

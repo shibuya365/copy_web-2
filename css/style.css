@@ -30,6 +30,10 @@ input {
   margin: 0 2vw;
 }
 
+.l-0vw {
+  margin-bottom: 0px;
+}
+
 .l-5vw {
   margin-bottom: 5vw;
 }

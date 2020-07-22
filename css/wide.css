@@ -41,6 +41,9 @@
 }
 
 @media (min-width: 980px) {
+  .l-2vh {
+    margin-bottom: 2vh;
+  }
   .t-m-l_margin {
     margin-bottom: 70px;
   }
@@ -69,5 +72,24 @@
   }
   #four-column {
     display: flex;
+  }
+  .recent-post {
+    margin-bottom: 1vw;
+  }
+  input {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 30vh;
+  }
+  footer {
+    position: relative;
+  }
+  footer .social {
+    width: 10vw;
+  }
+  footer .h-last-txt {
+    position: absolute;
+    margin-left: 30vw;
+    margin-bottom: 4vh;
   }
 }

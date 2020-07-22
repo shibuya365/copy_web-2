@@ -27,9 +27,14 @@ input {
 
 
 // - Layout – 位置に関する指定、頭に「l-」をつける
+
 .l-4 {
   width: 25%;
   margin: 0 2vw;
+}
+
+.l-0vw {
+  margin-bottom: 0px;
 }
 
 .l-5vw {
